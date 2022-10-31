@@ -36,7 +36,9 @@ const App : React.FC = ()=>{
   <Routes>
     <Route path="jedi" element={<Jedi  />} >
       <Route path="yoda" element={<Yoda  />} />
-      <Route path="luke" element={<Luke  />} />
+      <Route path="luke" element={<Luke  />}>
+      <Route path=":urldata"element={<Luke  />}></Route>
+      </Route>
 
 
     
