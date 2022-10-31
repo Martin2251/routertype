@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import {Routes, Route, Link} from "react-router-dom"
 import './App.css';
 import Jedi from './components/Jedi';
@@ -17,11 +17,23 @@ const App : React.FC = ()=>{
 
       </p>
     </Link>
+    <Link to="empire">
+      <p>empire
+
+
+      </p>
+    </Link>
+    <Link to="rebel">
+      <p>rebel 
+
+
+      </p>
+    </Link>
   </div>
   <Routes>
     <Route path="jedi" element={<Jedi  />} />
     <Route path="empire" element={<Empire  />} />
-    <Route path="empire" element={<Rebel  />} />
+    <Route path="rebel " element={<Rebel  />} />
   </Routes>
   </>
   );
