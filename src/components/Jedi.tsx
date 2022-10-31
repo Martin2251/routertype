@@ -9,7 +9,7 @@ const Jedi = () => {
     <Link to="yoda">
         <p>Yoda</p>
     </Link>
-    <Link to="luke">
+    <Link to="luke/skywalker">
         <p>Luke</p>
     </Link>
     <Outlet  />
