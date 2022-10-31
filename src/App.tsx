@@ -30,8 +30,9 @@ const App : React.FC = ()=>{
       </p>
     </Link>
   </div>
+  {/* A JSX comment  astrix is needed for nested routes*/}
   <Routes>
-    <Route path="jedi" element={<Jedi  />} />
+    <Route path="jedi/*" element={<Jedi  />} />
     <Route path="empire" element={<Empire  />} />
     <Route path="rebel " element={<Rebel  />} />
   </Routes>
