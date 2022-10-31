@@ -7,6 +7,7 @@ import Empire from './components/Empire';
 import Rebel from './components/Rebel';
 import Yoda from './components/Yoda';
 import Luke from './components/Luke';
+import Jaja from './components/Jaja';
 
 const App : React.FC = ()=>{
   return (
