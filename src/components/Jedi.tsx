@@ -12,10 +12,7 @@ const Jedi = () => {
     <Link to="luke">
         <p>Luke</p>
     </Link>
-    <Routes>
-        <Route path="yoda" element={<Yoda  />} />
-        <Route path="luke" element={<Luke  />} />
-    </Routes>
+    <Outlet  />
     
     
     </div>

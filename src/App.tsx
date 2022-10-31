@@ -5,6 +5,8 @@ import './App.css';
 import Jedi from './components/Jedi';
 import Empire from './components/Empire';
 import Rebel from './components/Rebel';
+import Yoda from './components/Yoda';
+import Luke from './components/Luke';
 
 const App : React.FC = ()=>{
   return (
@@ -32,7 +34,14 @@ const App : React.FC = ()=>{
   </div>
   {/* A JSX comment  astrix is needed for nested routes*/}
   <Routes>
-    <Route path="jedi/*" element={<Jedi  />} />
+    <Route path="jedi" element={<Jedi  />} >
+      <Route path="yoda" element={<Yoda  />} />
+      <Route path="luke" element={<Luke  />} />
+
+
+    
+    
+    </Route>
     <Route path="empire" element={<Empire  />} />
     <Route path="rebel " element={<Rebel  />} />
   </Routes>
