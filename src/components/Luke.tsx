@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useParams,useLocation,useNavigate,Navigate } from 'react-router-dom'
 const Luke = () => {
 
@@ -8,15 +8,17 @@ const Luke = () => {
   const navigate = useNavigate();
   // can do to do the redirect
 
+  const [redirectToEmpire, setRedirectToEmpire] = useState(false);
 
-  const handleClick = () => navigate('empire');
+  const handleClick = () => navigate('/empire');
   console.log(params);
   console.log(location);
   return (
 
     // instead of url data you can call it whatever you want but it must be the same as on the app page on the :urldata 
     <div><p>This is the Luke {params.urldata} pages</p>
-    <button onClick={handleClick}> </button>
+    <button onClick={handleClick}> Navigate to empire</button>
+    {redirectToEmpire && <Navigate to='/empire'  />}
     </div>
   )
 }
